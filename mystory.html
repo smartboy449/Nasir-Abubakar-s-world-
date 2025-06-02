@@ -1,63 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Story - Nasir's World</title>
   <style>
-    body {
-      background-color: #020a13;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
     }
-
-    h1 {
-      color: #00e0ff;
-      margin-top: 20px;
-      font-size: 2.5em;
+    body {
+      background: linear-gradient(to right, #2c3e50, #3498db);
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
     }
-
     nav {
-      background-color: #001f33;
-      padding: 15px 0;
+      margin-bottom: 30px;
     }
-
     nav a {
-      color: #00e0ff;
-      margin: 0 15px;
+      color: #00ffff;
+      margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.1em;
+      transition: color 0.3s;
     }
-
-    p {
+    nav a:hover {
+      color: yellow;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .story-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      border-radius: 20px;
+      max-width: 900px;
+      line-height: 1.8;
       font-size: 1.2em;
-      max-width: 90%;
-      margin: 20px auto;
-      line-height: 1.6;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      color: #ccc;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <h1>My Story</h1>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="mystory.html">My Story</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <p>
-    My story begins in Kano, Nigeria, where I grew up with a big dream in my heart. Ever since I was little, I was amazed by how technology could change the world.
-    <br><br>
-    I decided I didn't want to just use technology — I wanted to create it. I started learning how to code, and I knew this was my path. Every day, I practice, I study, and I imagine the future I'm going to build.
-    <br><br>
-    I dream of building the fastest AI in the world. One that can help people, solve problems, and make the world better. I believe that even at 13 years old, I have the power to start something big.
-    <br><br>
-    This is just the beginning. Welcome to my story.
-  </p>
-</body>
-</html>
+    <a href="index.html">Home</
