@@ -2,66 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nasir's World</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #000814;
-      color: white;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
     }
-
-    nav {
-      background-color: #001f3f;
-      padding: 10px;
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
+      padding: 20px;
     }
-
+    header {
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: auto;
+    }
+    nav {
+      margin: 30px 0;
+    }
     nav a {
-      color: #00e0ff;
+      color: #00d9ff;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
+      transition: color 0.3s ease;
     }
-
     nav a:hover {
-      color: #ffcc00;
+      color: #ffcb05;
     }
-
-    h1 {
-      text-align: center;
-      color: #00e0ff;
-      margin-top: 30px;
-    }
-
-    p {
-      text-align: center;
-      font-size: 18px;
-      max-width: 600px;
-      margin: 20px auto;
-      line-height: 1.6;
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-
-  <h1>Welcome to Nasir's World</h1>
+  <header>
+    <h1>Welcome to Nasir's World 🌍</h1>
+    <p>The future engineer with the dream to build the fastest AI on Earth.</p>
+  </header>
 
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
-    <a href="mystory.html">My Story</a>
     <a href="projects.html">Projects</a>
+    <a href="mystory.html">My Story</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <p>
-    Hello! I'm Nasir Abubakar, a 13-year-old dreamer from Kano, Nigeria.
-    I want to build the fastest AI in the world!
-  </p>
+  <main>
+    <p>Explore my journey, my dreams, and how I'm becoming the best version of myself every day!</p>
+  </main>
 
+  <footer>
+    &copy; 2025 Nasir Abubakar. All rights reserved.
+  </footer>
 </body>
-</html>
+                                      </html
