@@ -1,60 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Story - Nasir's World</title>
+  <title>My Story</title>
   <style>
-    * {
-      box-sizing: border-box;
+    body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #fff;
     }
-    body {
-      background: linear-gradient(to right, #2c3e50, #3498db);
-      color: white;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-    }
+
     nav {
-      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      background-color: #000;
+      padding: 10px;
     }
+
     nav a {
-      color: #00ffff;
-      margin: 0 10px;
+      color: cyan;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
-      transition: color 0.3s;
     }
-    nav a:hover {
-      color: yellow;
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
     }
+
     h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
+      color: #00ffff;
       text-align: center;
     }
-    .story-box {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 25px;
-      border-radius: 20px;
-      max-width: 900px;
+
+    p {
       line-height: 1.8;
-      font-size: 1.2em;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-    }
-    footer {
-      margin-top: auto;
-      padding: 20px;
-      color: #ccc;
-      font-size: 0.9em;
+      font-size: 18px;
+      text-align: justify;
     }
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html">Home</
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="story.html">My Story</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>My Story</h1>
+    <p>
+      My name is Nasir Abubakar. I am a 13-year-old boy from Kano, Nigeria. I have a big dream – to become an engineer and build the fastest AI in the world. Ever since I was little, I have always loved technology. I enjoy learning new things, building websites, and thinking about how machines work.
+    </p>
+    <p>
+      Even though I am still young, I work very hard every day. I study coding, practice English, and design web pages with passion and focus. I believe that with strong determination, good guidance, and trust in Allah, I will one day achieve something amazing.
+    </p>
+    <p>
+      My dream is not just for me, but for the world. I want to inspire other young people from Nigeria and beyond. I want to tell the world, including Elon Musk and OpenAI, that the next generation of great minds is rising, and I am one of them.
+    </p>
+    <p>
+      This website is the first step in my journey. I am proud of it, and I know it is only the beginning. I will keep working, keep improving, and one day, the whole world will hear my name – Nasir the Smart Winner Boy.
+    </p>
+  </div>
+</body>
+</html>
