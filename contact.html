@@ -3,63 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact - Nasir's World</title>
+  <title>Contact</title>
   <style>
-    * {
-      box-sizing: border-box;
+    body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
     }
-    body {
-      background: linear-gradient(to right, #2c3e50, #2980b9);
-      color: white;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-    }
+
     nav {
-      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      background-color: #000;
+      padding: 10px;
     }
+
     nav a {
-      color: #00ffff;
-      margin: 0 10px;
+      color: cyan;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
-    nav a:hover {
-      color: yellow;
-    }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-    }
-    .contact-box {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 25px;
-      border-radius: 20px;
-      width: 100%;
+
+    .container {
       max-width: 600px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      margin: 60px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+      text-align: center;
     }
-    p {
+
+    .contact-item {
       margin: 15px 0;
-      font-size: 1.1em;
+      font-size: 18px;
     }
-    a {
-      color: #00ffcc;
+
+    .contact-item a {
+      color: #00ffff;
       text-decoration: none;
     }
-    a:hover {
+
+    .contact-item a:hover {
       text-decoration: underline;
     }
-    footer {
-      margin-top: auto;
-      padding: 20px;
-      color: #ccc;
-      font-size: 0.9em;
+
+    h1 {
+      color: #00ffff;
     }
   </style>
 </head>
@@ -68,6 +60,14 @@
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
     <a href="projects.html">Projects</a>
-    <a href="mystory.html">My Story</a>
+    <a href="story.html">My Story</a>
     <a href="contact.html">Contact</a>
   </nav>
+
+  <div class="container">
+    <h1>Contact Me</h1>
+    <div class="contact-item">
+      📧 Email: <a href="mailto:nasirabubakarsmartwinnerboy@gmail.com">nasirabubakarsmartwinnerboy@gmail.com</a>
+    </div>
+    <div class="contact-item">
+      📞 Phone: <a href="tel:+2347066312003">07066312003
