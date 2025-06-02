@@ -2,60 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Me - Nasir's World</title>
   <style>
-    body {
-      background-color: #020a13;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #2b5876, #4e4376);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
       text-align: center;
     }
-
-    h1 {
-      color: #00e0ff;
-      margin-top: 20px;
-      font-size: 2.5em;
-    }
-
     nav {
-      background-color: #001f33;
-      padding: 15px 0;
+      margin-bottom: 30px;
     }
-
     nav a {
-      color: #00e0ff;
-      margin: 0 15px;
+      color: #00f0ff;
+      margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.1em;
+      transition: color 0.3s ease;
     }
-
-    p {
-      font-size: 1.2em;
-      max-width: 90%;
-      margin: 20px auto;
-      line-height: 1.6;
+    nav a:hover {
+      color: #ffdd00;
+    }
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 20px;
+    }
+    .content {
+      max-width: 700px;
+      font-size: 1.1em;
+      line-height: 1.8em;
+    }
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      color: #ddd;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <h1>About Me</h1>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
-    <a href="mystory.html">My Story</a>
     <a href="projects.html">Projects</a>
+    <a href="mystory.html">My Story</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <p>
-    My name is Nasir Abubakar, a passionate and curious 13-year-old from Kano, Nigeria.
-    I have a big dream: to build the fastest and smartest AI in the world!
-    <br><br>
-    I love learning, exploring new ideas, and turning them into something real with code.
-    Every day I take a step closer to becoming a great engineer and sharing my talent with the world.
-  </p>
+
+  <h1>About Me</h1>
+  <div class="content">
+    <p>My name is <strong>Nasir Abubakar</strong>, a 13-year-old future engineer from Kano, Nigeria. My dream is to build the fastest AI in the world and change how technology serves humanity.</p>
+    <p>I love coding, creating websites, and learning new things every day. I'm currently building my personal website to share my story, my projects, and my future goals with the world.</p>
+    <p>I believe that with faith, discipline, and hard work, I can achieve anything. Welcome to my world!</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Nasir Abubakar
+  </footer>
 </body>
 </html>
