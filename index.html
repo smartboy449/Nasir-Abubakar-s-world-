@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nasir's World</title>
+  <title>Nasir's World - Home</title>
   <style>
     body {
       margin: 0;
@@ -21,7 +21,7 @@
 
     header h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 2.2em;
       color: #00bfff;
     }
 
@@ -31,6 +31,7 @@
       justify-content: center;
       gap: 30px;
       padding: 15px 0;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -44,22 +45,23 @@
       color: #00bfff;
     }
 
-    .main-content {
-      padding: 50px 20px;
+    .home-section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
       text-align: center;
     }
 
-    .main-content h2 {
-      font-size: 2.5em;
+    .home-section h2 {
       color: #00bfff;
+      font-size: 2.8em;
       margin-bottom: 20px;
     }
 
-    .main-content p {
-      font-size: 1.2em;
-      max-width: 700px;
-      margin: auto;
-      line-height: 1.6;
+    .home-section p {
+      font-size: 1.3em;
+      line-height: 1.7;
+      text-align: justify;
     }
 
     footer {
@@ -72,12 +74,16 @@
     }
 
     @media (max-width: 600px) {
-      .main-content h2 {
+      .home-section h2 {
         font-size: 2em;
       }
 
-      .main-content p {
+      .home-section p {
         font-size: 1em;
+      }
+
+      nav {
+        gap: 15px;
       }
     }
   </style>
@@ -91,19 +97,24 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
+    <a href="mystory.html">My Story</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <div class="main-content">
-    <h2>Welcome to My Website!</h2>
+  <div class="home-section">
+    <h2>Welcome to My World</h2>
     <p>
-      Hello! I'm Nasir Abubakar, a 13-year-old dreamer from Kano, Nigeria. 
-      This is my personal space on the web where I share my passion for 
-      technology, AI, engineering, and my journey to become one of the best AI creators in the world.
+      Hello! I'm <strong>Nasir Abubakar</strong>, a 13-year-old future engineer and AI creator from Kano, Nigeria.
+      I built this website to share my dreams, projects, and journey with the world.
     </p>
     <p>
-      Explore my projects, read my story, and follow along as I build amazing things step by step.
+      I'm learning how to code, build websites, and develop AI like NasirBot. I believe with faith, hard work, and knowledge,
+      young people like me can change the world.
+    </p>
+    <p>
+      Explore my story, see my projects, and join me as I work to become the best version of myself —
+      and inspire others to do the same.
     </p>
   </div>
 
@@ -112,4 +123,4 @@
   </footer>
 
 </body>
-  </html>
+</html>
