@@ -8,76 +8,119 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0a0f2c;
+      background-color: #f5f6fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #0a1a33;
       color: white;
+      padding: 1rem 0;
+      text-align: center;
     }
+
+    header h1 {
+      margin: 0;
+      color: #2980b9;
+    }
+
     nav {
-      background-color: #081835;
-      padding: 1rem;
+      background-color: #162447;
+      padding: 1rem 0;
       text-align: center;
     }
+
     nav a {
-      color: #00BFFF;
+      color: #f4f4f4;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 1rem;
       font-weight: bold;
+      display: block;
+      padding: 0.5rem 0;
     }
+
     nav a:hover {
-      color: #fff;
+      color: #00bcd4;
     }
+
     .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: #101b3d;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 0 30px rgba(0, 191, 255, 0.4);
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    h1 {
-      text-align: center;
-      color: #00BFFF;
-      font-size: 36px;
-    }
+
     h2 {
-      color: #FFD700;
-      margin-top: 25px;
+      color: #0a1a33;
+      text-align: center;
+      margin-bottom: 1rem;
     }
-    p {
-      line-height: 1.6;
-      font-size: 18px;
-      margin-bottom: 20px;
+
+    .project {
+      background-color: #eaf2f8;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .emoji {
-      font-size: 24px;
+
+    .project h3 {
+      margin-top: 0;
+      color: #162447;
+    }
+
+    .project p {
+      margin: 0.5rem 0 0;
+    }
+
+    @media (min-width: 600px) {
+      nav {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav a {
+        margin: 0 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
+
+  <header>
+    <h1>Nasir's World</h1>
+    <p>Dream. Build. Inspire.</p>
+  </header>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
-    <a href="story.html">My Story</a>
     <a href="projects.html">Projects</a>
+    <a href="story.html">My Story</a>
     <a href="contact.html">Contact</a>
   </nav>
 
   <div class="container">
-    <h1>My Projects</h1>
+    <h2>My Projects</h2>
 
-    <h2><span class="emoji">🌟</span> Personal Website</h2>
-    <p>
-      This is my first personal website, designed to showcase my story, dreams, skills, and progress as a young developer.
-    </p>
+    <div class="project">
+      <h3>🌐 My Personal Website</h3>
+      <p>This website you are viewing right now! I built it using HTML and CSS, and I update it regularly to share my journey and dreams.</p>
+    </div>
 
-    <h2><span class="emoji">🤖</span> NasirBot</h2>
-    <p>
-      My first smart AI assistant project. I’m building NasirBot step by step to understand how AI can help people. The full code and documentation will be available on GitHub soon!
-    </p>
+    <div class="project">
+      <h3>🤖 NasirBot (Coming Soon)</h3>
+      <p>A smart chatbot project I am working on. NasirBot will help people learn, ask questions, and explore ideas — just like ChatGPT!</p>
+    </div>
 
-    <h2><span class="emoji">🧠</span> Learning Journal (Coming Soon)</h2>
-    <p>
-      A blog-style journal where I will post what I learn every week in coding, engineering, and AI development.
-    </p>
+    <div class="project">
+      <h3>🛠️ Mini Coding Projects</h3>
+      <p>I'm working on small coding exercises like calculators, quizzes, and fun apps to improve my programming skills step by step.</p>
+    </div>
+
   </div>
+
 </body>
-</html>
+      </html>
