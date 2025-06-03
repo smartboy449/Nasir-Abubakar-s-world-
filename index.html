@@ -1,79 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nasir's World</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
     body {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
     }
+
     header {
-      margin-bottom: 30px;
+      background-color: #1c1c1c;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
     }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      color: #003366;
     }
-    p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: auto;
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 18px;
+      color: white;
     }
+
     nav {
-      margin: 30px 0;
+      background-color: #2e2e2e;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      flex-wrap: wrap;
     }
+
     nav a {
-      color: #00d9ff;
-      margin: 0 15px;
+      color: white;
       text-decoration: none;
+      margin: 10px 15px;
       font-weight: bold;
-      transition: color 0.3s ease;
     }
+
     nav a:hover {
-      color: #ffcb05;
+      text-decoration: underline;
+      color: #00bfff;
     }
-    footer {
-      margin-top: auto;
+
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
       padding: 20px;
-      font-size: 0.9em;
-      color: #aaa;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .content h2 {
+      color: #003366;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Welcome to Nasir's World 🌍</h1>
-    <p>The future engineer with the dream to build the fastest AI on Earth.</p>
+    <h1>Nasir's World</h1>
+    <p>Dream. Build. Inspire.</p>
   </header>
 
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
     <a href="projects.html">Projects</a>
-    <a href="mystory.html">My Story</a>
+    <a href="story.html">My Story</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <main>
-    <p>Explore my journey, my dreams, and how I'm becoming the best version of myself every day!</p>
-  </main>
+  <div class="content">
+    <h2>Welcome to My Website</h2>
+    <p>Hello! My name is Nasir Abubakar, a 13-year-old dreamer from Kano, Nigeria. This is my personal website where I share my vision, projects, and journey to becoming a world-class engineer and AI builder. I believe that with knowledge, strong faith, and hard work, we can change the world!</p>
+  </div>
 
-  <footer>
-    &copy; 2025 Nasir Abubakar. All rights reserved.
-  </footer>
 </body>
-                                      </html
+  </html>
