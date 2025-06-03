@@ -5,70 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Me - Nasir's World</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
     body {
-      background: linear-gradient(to right, #2b5876, #4e4376);
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f6fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #0a1a33;
       color: white;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
+      padding: 1rem 0;
       text-align: center;
     }
+
+    header h1 {
+      margin: 0;
+      color: #2980b9;
+    }
+
     nav {
-      margin-bottom: 30px;
+      background-color: #162447;
+      padding: 1rem 0;
+      text-align: center;
     }
+
     nav a {
-      color: #00f0ff;
-      margin: 0 10px;
+      color: #f4f4f4;
       text-decoration: none;
+      margin: 0 1rem;
       font-weight: bold;
-      transition: color 0.3s ease;
+      display: block;
+      padding: 0.5rem 0;
     }
+
     nav a:hover {
-      color: #ffdd00;
+      color: #00bcd4;
     }
-    h1 {
-      font-size: 2.8em;
-      margin-bottom: 20px;
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    .content {
-      max-width: 700px;
-      font-size: 1.1em;
-      line-height: 1.8em;
+
+    h2 {
+      color: #0a1a33;
+      text-align: center;
+      margin-bottom: 1rem;
     }
-    footer {
-      margin-top: auto;
-      padding: 20px;
-      color: #ddd;
-      font-size: 0.9em;
+
+    p {
+      line-height: 1.6;
+    }
+
+    @media (min-width: 600px) {
+      nav {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav a {
+        margin: 0 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
+
+  <header>
+    <h1>Nasir's World</h1>
+    <p>Dream. Build. Inspire.</p>
+  </header>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
     <a href="projects.html">Projects</a>
-    <a href="mystory.html">My Story</a>
+    <a href="story.html">My Story</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <h1>About Me</h1>
-  <div class="content">
-    <p>My name is <strong>Nasir Abubakar</strong>, a 13-year-old future engineer from Kano, Nigeria. My dream is to build the fastest AI in the world and change how technology serves humanity.</p>
-    <p>I love coding, creating websites, and learning new things every day. I'm currently building my personal website to share my story, my projects, and my future goals with the world.</p>
-    <p>I believe that with faith, discipline, and hard work, I can achieve anything. Welcome to my world!</p>
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      My name is Nasir Abubakar, a passionate 13-year-old from Kano, Nigeria. I'm on a mission to become one of the smartest engineers and AI creators in the world. I love technology, creativity, and using knowledge to make a difference.
+    </p>
+    <p>
+      Since I was young, I’ve always been curious about how things work. I enjoy learning how to code, build websites, and solve problems using technology. I believe that with hard work, strong faith, and dedication, we can achieve great things and inspire others to dream big.
+    </p>
+    <p>
+      On this website, I share my journey, my dreams, and the amazing things I'm building step by step. I want the world to see that age doesn’t matter when you have passion and vision!
+    </p>
   </div>
 
-  <footer>
-    &copy; 2025 Nasir Abubakar
-  </footer>
 </body>
 </html>
