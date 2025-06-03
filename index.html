@@ -3,120 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nasir's World - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <title>Nasir's World</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
     body {
-      background-color: #f4f6f8;
-      color: #222;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0f2c;
+      color: #ffffff;
     }
 
     header {
-      background-color: #0d1b2a;
-      color: #ffffff;
+      background-color: #091943;
       padding: 20px;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     }
 
     header h1 {
-      font-size: 28px;
-      color: #1d9bf0;
-    }
-
-    header p {
-      font-size: 16px;
-      margin-top: 4px;
+      margin: 0;
+      font-size: 2em;
+      color: #00bfff;
     }
 
     nav {
-      background-color: #1b263b;
+      background-color: #0d1b4c;
       display: flex;
       justify-content: center;
-      padding: 10px 0;
-      gap: 20px;
-      flex-wrap: wrap;
+      gap: 30px;
+      padding: 15px 0;
     }
 
     nav a {
       color: #ffffff;
       text-decoration: none;
-      font-weight: 600;
-      padding: 8px 12px;
-      border-radius: 6px;
-      transition: background-color 0.3s;
+      font-weight: bold;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
-      background-color: #415a77;
+      color: #00bfff;
     }
 
-    main {
-      padding: 30px 20px;
-      max-width: 800px;
-      margin: auto;
-      background-color: #ffffff;
-      margin-top: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    .main-content {
+      padding: 50px 20px;
+      text-align: center;
     }
 
-    main h2 {
-      color: #1d3557;
+    .main-content h2 {
+      font-size: 2.5em;
+      color: #00bfff;
       margin-bottom: 20px;
     }
 
-    main p {
-      line-height: 1.8;
-      font-size: 16px;
+    .main-content p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
     }
 
     footer {
+      background-color: #091943;
       text-align: center;
-      padding: 15px;
-      background-color: #0d1b2a;
-      color: #ffffff;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #cccccc;
       margin-top: 50px;
-      font-size: 14px;
     }
 
     @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
+      .main-content h2 {
+        font-size: 2em;
+      }
+
+      .main-content p {
+        font-size: 1em;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Nasir's World</h1>
-    <p>Dream. Build. Inspire.</p>
   </header>
 
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
     <a href="projects.html">Projects</a>
-    <a href="story.html">My Story</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <main>
-    <h2>Welcome to My Website</h2>
-    <p>Hello! My name is <strong>Nasir Abubakar</strong>, a 13-year-old dreamer from Kano, Nigeria. This is my personal website where I share my vision, projects, and journey to becoming a world-class engineer and AI builder.</p>
-    <p>I believe that with knowledge, strong faith, and hard work, we can change the world. Join me as I build, learn, and inspire others around the globe.</p>
-  </main>
+  <div class="main-content">
+    <h2>Welcome to My Website!</h2>
+    <p>
+      Hello! I'm Nasir Abubakar, a 13-year-old dreamer from Kano, Nigeria. 
+      This is my personal space on the web where I share my passion for 
+      technology, AI, engineering, and my journey to become one of the best AI creators in the world.
+    </p>
+    <p>
+      Explore my projects, read my story, and follow along as I build amazing things step by step.
+    </p>
+  </div>
 
   <footer>
-    &copy; 2025 Nasir's World. All rights reserved.
+    &copy; 2025 Nasir Abubakar. All rights reserved.
   </footer>
+
 </body>
-      </html>
+  </html>
