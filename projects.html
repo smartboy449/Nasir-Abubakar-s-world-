@@ -1,85 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects – Nasir's World</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Nasir's World</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f2f2f2;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0a0f2c;
+      color: white;
     }
     nav {
-      background-color: #007bff;
-      padding: 10px;
+      background-color: #081835;
+      padding: 1rem;
+      text-align: center;
     }
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-    }
-    nav ul li {
-      margin: 0 15px;
-    }
-    nav ul li a {
-      color: white;
+    nav a {
+      color: #00BFFF;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
-    nav ul li a.active {
-      text-decoration: underline;
+    nav a:hover {
+      color: #fff;
     }
     .container {
       max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin: 40px auto;
+      background: #101b3d;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 191, 255, 0.4);
     }
     h1 {
       text-align: center;
-      color: #007bff;
+      color: #00BFFF;
+      font-size: 36px;
     }
     h2 {
-      color: #333;
-      margin-top: 30px;
+      color: #FFD700;
+      margin-top: 25px;
     }
     p {
       line-height: 1.6;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .emoji {
+      font-size: 24px;
     }
   </style>
 </head>
 <body>
-
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="story.html">My Story</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
-  <main class="container">
+  <div class="container">
     <h1>My Projects</h1>
 
-    <h2>🌟 Personal Website</h2>
-    <p>This is my first personal website, designed to showcase my story, dreams, skills, and progress as a young developer.</p>
+    <h2><span class="emoji">🌟</span> Personal Website</h2>
+    <p>
+      This is my first personal website, designed to showcase my story, dreams, skills, and progress as a young developer.
+    </p>
 
-    <h2>🤖 NasirBot</h2>
-    <p>My first smart AI assistant project. I’m building NasirBot step by step to understand how AI can help people. The full code and documentation will be available on GitHub soon!</p>
+    <h2><span class="emoji">🤖</span> NasirBot</h2>
+    <p>
+      My first smart AI assistant project. I’m building NasirBot step by step to understand how AI can help people. The full code and documentation will be available on GitHub soon!
+    </p>
 
-    <h2>🧠 Learning Journal (Coming Soon)</h2>
-    <p>A blog-style journal where I will post what I learn every week in coding, engineering, and AI development.</p>
-
-  </main>
-
+    <h2><span class="emoji">🧠</span> Learning Journal (Coming Soon)</h2>
+    <p>
+      A blog-style journal where I will post what I learn every week in coding, engineering, and AI development.
+    </p>
+  </div>
 </body>
-  </html>
+</html>
