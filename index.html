@@ -1,125 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nasir's World - Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nasir Abubakar's World</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0a0f2c;
-      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #001f3f;
+      color: white;
     }
-
-    header {
-      background-color: #091943;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.2em;
-      color: #00bfff;
-    }
-
     nav {
-      background-color: #0d1b4c;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 15px 0;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #00bfff;
-    }
-
-    .home-section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
+      background-color: #000c1a;
+      padding: 15px;
       text-align: center;
     }
-
-    .home-section h2 {
-      color: #00bfff;
-      font-size: 2.8em;
-      margin-bottom: 20px;
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
     }
-
-    .home-section p {
-      font-size: 1.3em;
-      line-height: 1.7;
-      text-align: justify;
+    nav a:hover {
+      color: #00aced;
     }
-
+    .hero {
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 50px;
+      color: #00aced;
+    }
+    .hero p {
+      font-size: 22px;
+      max-width: 700px;
+      margin: auto;
+      color: #cce7ff;
+    }
+    .btn {
+      margin-top: 30px;
+      background-color: #00aced;
+      color: white;
+      padding: 12px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #007aa3;
+    }
     footer {
-      background-color: #091943;
       text-align: center;
       padding: 20px;
-      font-size: 0.9em;
+      background-color: #000c1a;
+      margin-top: 60px;
+      font-size: 14px;
       color: #cccccc;
-      margin-top: 50px;
-    }
-
-    @media (max-width: 600px) {
-      .home-section h2 {
-        font-size: 2em;
-      }
-
-      .home-section p {
-        font-size: 1em;
-      }
-
-      nav {
-        gap: 15px;
-      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Nasir's World</h1>
-  </header>
-
+  <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
-    <a href="mystory.html">My Story</a>
     <a href="projects.html">Projects</a>
+    <a href="my-story.html">My Story</a>
     <a href="contact.html">Contact</a>
+    <a href="help.html">Help Others</a>
   </nav>
 
-  <div class="home-section">
-    <h2>Welcome to My World</h2>
-    <p>
-      Hello! I'm <strong>Nasir Abubakar</strong>, a 13-year-old future engineer and AI creator from Kano, Nigeria.
-      I built this website to share my dreams, projects, and journey with the world.
-    </p>
-    <p>
-      I'm learning how to code, build websites, and develop AI like NasirBot. I believe with faith, hard work, and knowledge,
-      young people like me can change the world.
-    </p>
-    <p>
-      Explore my story, see my projects, and join me as I work to become the best version of myself —
-      and inspire others to do the same.
-    </p>
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Welcome to Nasir's World</h1>
+    <p>I am Nasir Abubakar, a young dreamer from Kano, Nigeria. I want to become a great engineer and build the fastest AI in the world to help people everywhere.</p>
+    <button class="btn" onclick="location.href='projects.html'">See My Projects</button>
   </div>
 
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Nasir Abubakar. All rights reserved.
+    &copy; 2025 Nasir Abubakar. All Rights Reserved.
   </footer>
 
 </body>
