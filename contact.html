@@ -3,46 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact</title>
+  <title>Contact - Nasir's World</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0f2c;
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #091943;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+      color: #00bfff;
     }
 
     nav {
+      background-color: #0d1b4c;
       display: flex;
       justify-content: center;
-      background-color: #000;
-      padding: 10px;
+      gap: 30px;
+      padding: 15px 0;
+      flex-wrap: wrap;
     }
 
     nav a {
-      color: cyan;
+      color: #ffffff;
       text-decoration: none;
-      margin: 0 15px;
       font-weight: bold;
+      transition: color 0.3s ease;
     }
 
-    .container {
-      max-width: 600px;
-      margin: 60px auto;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.4);
-      border-radius: 10px;
+    nav a:hover {
+      color: #00bfff;
+    }
+
+    .contact-section {
+      max-width: 800px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .contact-section h2 {
+      color: #00bfff;
+      font-size: 2.5em;
       text-align: center;
+      margin-bottom: 30px;
     }
 
     .contact-item {
-      margin: 15px 0;
-      font-size: 18px;
+      margin: 20px 0;
+      font-size: 1.2em;
+      text-align: center;
     }
 
     .contact-item a {
-      color: #00ffff;
+      color: #00bfff;
       text-decoration: none;
     }
 
@@ -50,24 +73,57 @@
       text-decoration: underline;
     }
 
-    h1 {
-      color: #00ffff;
+    footer {
+      background-color: #091943;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #cccccc;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
+
+  <header>
+    <h1>Nasir's World</h1>
+  </header>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
+    <a href="mystory.html">My Story</a>
     <a href="projects.html">Projects</a>
-    <a href="story.html">My Story</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <div class="container">
-    <h1>Contact Me</h1>
+  <div class="contact-section">
+    <h2>Contact Me</h2>
+
     <div class="contact-item">
       📧 Email: <a href="mailto:nasirabubakarsmartwinnerboy@gmail.com">nasirabubakarsmartwinnerboy@gmail.com</a>
     </div>
+
     <div class="contact-item">
-      📞 Phone: <a href="tel:+2347066312003">07066312003
+      📱 Phone: <a href="tel:+2347066312003">07066312003</a>
+    </div>
+
+    <div class="contact-item">
+      💬 WhatsApp: <a href="https://wa.me/2347066312003" target="_blank">Chat on WhatsApp</a>
+    </div>
+
+    <div class="contact-item">
+      🐦 Twitter (X): <a href="https://x.com/NasirSmart7008?t=Ttxp2oWGrbnlHaOxAKEidw&s=09" target="_blank">Nasir on X</a>
+    </div>
+
+    <div class="contact-item">
+      📸 Instagram: <a href="https://www.instagram.com/nasirabubakarsmartwinnerboy?igsh=MXcxdXdseDF2OGJjYg==" target="_blank">Follow on Instagram</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Nasir Abubakar. All rights reserved.
+  </footer>
+
+</body>
+  </html>
