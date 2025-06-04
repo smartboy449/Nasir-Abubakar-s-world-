@@ -1,106 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Help Others - Nasir's World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #001f3f;
-      color: white;
-    }
-    nav {
-      background-color: #000c1a;
-      padding: 15px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 20px;
-      font-size: 18px;
-    }
-    nav a:hover {
-      color: #00aced;
-    }
-    .container {
-      padding: 60px 20px;
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-    }
-    h1 {
-      color: #00aced;
-      font-size: 40px;
-    }
-    p {
-      font-size: 20px;
-      color: #cce7ff;
-      margin-bottom: 30px;
-    }
-    .action {
-      margin-top: 30px;
-    }
-    .btn {
-      background-color: #00aced;
-      color: white;
-      padding: 12px 30px;
-      font-size: 18px;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      margin: 10px;
-    }
-    .btn:hover {
-      background-color: #007aa3;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #000c1a;
-      margin-top: 60px;
-      font-size: 14px;
-      color: #cccccc;
-    }
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background: linear-gradient(135deg, #0a0f2c, #1e2959);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #10163a;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideDown 1s ease;
+}
+
+header h1 {
+  color: #00c3ff;
+  font-size: 28px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #00c3ff;
+  border-bottom: 2px solid #00c3ff;
+  padding-bottom: 3px;
+}
+
+.help {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeIn 1.5s ease;
+}
+
+.help h2 {
+  font-size: 36px;
+  color: #00c3ff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.help p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #c0c7ff;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0d1230;
+  color: #888;
+  font-size: 14px;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .help h2 {
+    font-size: 28px;
+  }
+
+  .help p {
+    font-size: 16px;
+  }
+}
+
   </style>
 </head>
 <body>
-
-  <nav>
-  <div class="logo">Nasir's World</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Me</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="my-story.html">My Story</a></li>
-    <li><a href="help.html">Help Others</a></li>
-    <li><a href="team.html">Team</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  </nav>
-
-  <!-- Help Section -->
-  <div class="container">
-    <h1>Help Others</h1>
+  <header>
+    <h1>Nasir's World</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="mystory.html">My Story</a>
+      <a href="myvision.html">My Vision</a>
+      <a href="help.html" class="active">Help Others</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>  <section class="help">
+    <h2>Help Others</h2>
     <p>
-      My dream is not just about building technology — it’s about using it to make the world a better place.
-      Let’s work together to support kids, families, and communities in need.
+      I believe that true success means helping others succeed too. That’s why I want to support children, students, and anyone with dreams — just like me.
+      <br><br>
+      I plan to share free resources, make learning easier with tools like NasirBot, and always encourage others to believe in themselves.
+      <br><br>
+      My goal is to build a community where we lift each other up, solve problems together, and spread knowledge with kindness and purpose.
     </p>
-
-    <div class="action">
-      <button class="btn" onclick="window.location.href='https://wa.me/2347066312003'">Message Me on WhatsApp</button>
-      <button class="btn" onclick="window.location.href='contact.html'">Get in Touch</button>
-    </div>
-
-    <p>One day, with your help, I will start a global foundation to support children like the girl I saw — full of potential but in need of a little help. 💙</p>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 Nasir Abubakar. Helping others is our mission.
+  </section>  <footer>
+    &copy; 2025 Nasir Abubakar - All Rights Reserved
   </footer>
-
 </body>
-  </html
+  </html>
