@@ -6,8 +6,13 @@
   <title>Meet the Team - Nasir's World</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"/>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: 'Poppins', sans-serif;
       background-color: #0d1b2a;
       color: #ffffff;
@@ -31,14 +36,13 @@
       list-style: none;
       display: flex;
       gap: 20px;
-      margin: 0;
-      padding: 0;
     }
 
     nav ul li a {
       color: #ffffff;
       text-decoration: none;
       font-weight: 500;
+      transition: color 0.3s ease;
     }
 
     nav ul li a:hover {
@@ -47,7 +51,7 @@
 
     header {
       text-align: center;
-      padding: 50px 20px 20px;
+      padding: 60px 20px 30px;
     }
 
     header h1 {
@@ -55,21 +59,33 @@
       color: #00b4d8;
     }
 
+    header p {
+      font-size: 1.1rem;
+      color: #c9d6df;
+      margin-top: 10px;
+    }
+
     .team-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 30px;
-      padding: 30px;
-      max-width: 1000px;
+      padding: 40px 30px;
+      max-width: 1200px;
       margin: 0 auto;
     }
 
     .member {
       background-color: #1b263b;
-      padding: 20px;
-      border-radius: 12px;
+      padding: 25px;
+      border-radius: 15px;
       text-align: center;
-      box-shadow: 0 0 10px rgba(0, 180, 216, 0.2);
+      box-shadow: 0 0 12px rgba(0, 180, 216, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .member:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 18px rgba(0, 180, 216, 0.3);
     }
 
     .member img {
@@ -78,7 +94,7 @@
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 15px;
-      border: 2px solid #00b4d8;
+      border: 3px solid #00b4d8;
     }
 
     .member h3 {
@@ -88,7 +104,7 @@
 
     .member p {
       font-size: 0.95rem;
-      color: #ccc;
+      color: #cbd5e1;
     }
 
     footer {
@@ -98,6 +114,23 @@
       color: #ccc;
       font-size: 0.9rem;
       margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+      }
+
+      .team-container {
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -119,51 +152,47 @@
 
   <!-- Header -->
   <header>
-    <h1>Meet the Team</h1>
-    <p>The amazing team working with Nasir to build a better future 🌍</p>
+    <h1>Meet the Dream Team</h1>
+    <p>These are the amazing people working with Nasir to bring his vision to life.</p>
   </header>
 
   <!-- Team Members -->
   <div class="team-container">
 
-    <!-- Nasir -->
     <div class="member">
-      <img src="https://via.placeholder.com/100" alt="Nasir" />
+      <img src="https://via.placeholder.com/100" alt="Nasir">
       <h3>Nasir Abubakar</h3>
       <p><strong>Founder & Visionary Leader</strong><br>
-      A young genius from Nigeria with the dream to build the world’s fastest AI. He leads the team with passion and purpose.</p>
+      A young genius from Kano, Nigeria who dreams of building the fastest AI in the world.</p>
     </div>
 
-    <!-- Michael -->
     <div class="member">
-      <img src="https://via.placeholder.com/100" alt="Michael" />
+      <img src="https://via.placeholder.com/100" alt="Michael">
       <h3>Michael</h3>
-      <p><strong>Engineer & Backend Developer</strong><br>
-      Provides support with website coding, backend structure, and technical implementations.</p>
+      <p><strong>Web Developer & Engineer</strong><br>
+      Supports with building and maintaining the website and coding structure.</p>
     </div>
 
-    <!-- Amit -->
     <div class="member">
-      <img src="https://via.placeholder.com/100" alt="Amit" />
+      <img src="https://via.placeholder.com/100" alt="Amit">
       <h3>Amit</h3>
       <p><strong>AI Specialist</strong><br>
-      Expert in GPT and artificial intelligence. Helps with building NasirBot’s smart engine and future AI systems.</p>
+      Expert in GPT technology. Helps develop NasirBot’s intelligence and logic.</p>
     </div>
 
-    <!-- Aisha -->
     <div class="member">
-      <img src="https://via.placeholder.com/100" alt="Aisha" />
+      <img src="https://via.placeholder.com/100" alt="Aisha">
       <h3>Aisha</h3>
-      <p><strong>Writer & Global Outreach</strong><br>
-      Shares Nasir’s mission with the world. Connects with children, families, and communities who need help and hope.</p>
+      <p><strong>Community Outreach</strong><br>
+      Shares Nasir’s dream with the world and helps reach children in need.</p>
     </div>
 
   </div>
 
   <!-- Footer -->
   <footer>
-    &copy; 2025 Nasir Abubakar & Team. All rights reserved.
+    &copy; 2025 Nasir Abubakar & The Dream Team. All rights reserved.
   </footer>
 
 </body>
-                                                                       </html>
+</html>
