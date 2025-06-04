@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Story - Nasir's World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background: linear-gradient(135deg, #0a0f2c, #1e2959);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #10163a;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideDown 1s ease;
+}
+
+header h1 {
+  color: #00c3ff;
+  font-size: 28px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #00c3ff;
+  border-bottom: 2px solid #00c3ff;
+  padding-bottom: 3px;
+}
+
+.story {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeIn 1.5s ease;
+}
+
+.story h2 {
+  font-size: 36px;
+  color: #00c3ff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.story p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #c0c7ff;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0d1230;
+  color: #888;
+  font-size: 14px;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .story h2 {
+    font-size: 28px;
+  }
+
+  .story p {
+    font-size: 16px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nasir's World</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="mystory.html" class="active">My Story</a>
+      <a href="myvision.html">My Vision</a>
+      <a href="help.html">Help Others</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>  <section class="story">
+    <h2>My Story</h2>
+    <p>
+      I am Nasir Abubakar, a boy from Kano, Nigeria, with a big dream. Ever since I was a little child, I’ve always wanted to build things that make life better. I enjoy learning about technology, especially Artificial Intelligence.
+      <br><br>
+      I started teaching myself how to code, how to speak English well, and how to create a website to share my journey. My goal is to build the fastest AI in the world and help others rise with me.
+      <br><br>
+      This is just the beginning of my story. With hard work, faith, and support, I believe I can achieve anything.
+    </p>
+  </section>  <footer>
+    &copy; 2025 Nasir Abubakar - All Rights Reserved
+  </footer>
+</body>
+  </html>
