@@ -1,92 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nasir Abubakar's World</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nasir's World - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #001f3f;
-      color: white;
-    }
-    nav {
-      background-color: #000c1a;
-      padding: 15px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 20px;
-      font-size: 18px;
-    }
-    nav a:hover {
-      color: #00aced;
-    }
-    .hero {
-      padding: 100px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 50px;
-      color: #00aced;
-    }
-    .hero p {
-      font-size: 22px;
-      max-width: 700px;
-      margin: auto;
-      color: #cce7ff;
-    }
-    .btn {
-      margin-top: 30px;
-      background-color: #00aced;
-      color: white;
-      padding: 12px 30px;
-      font-size: 18px;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-    }
-    .btn:hover {
-      background-color: #007aa3;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #000c1a;
-      margin-top: 60px;
-      font-size: 14px;
-      color: #cccccc;
-    }
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background: linear-gradient(135deg, #0a0f2c, #1e2959);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #10163a;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideDown 1s ease;
+}
+
+header h1 {
+  color: #00c3ff;
+  font-size: 28px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #00c3ff;
+  border-bottom: 2px solid #00c3ff;
+  padding-bottom: 3px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px;
+  animation: fadeIn 1.5s ease;
+}
+
+.hero h2 {
+  font-size: 40px;
+  color: #00c3ff;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  line-height: 1.6;
+  color: #c0c7ff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0d1230;
+  color: #888;
+  font-size: 14px;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+
   </style>
 </head>
 <body>
-
-
-<header>
-  <h1>Nasir's World</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="projects.html">Projects</a>
-    <a href="mystory.html">My Story</a>
-    <a href="myvision.html">My Vision</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-  <!-- Hero Section -->
-  <div class="hero">
-    <h1>Welcome to Nasir's World</h1>
-    <p>I am Nasir Abubakar, a young dreamer from Kano, Nigeria. I want to become a great engineer and build the fastest AI in the world to help people everywhere.</p>
-    <button class="btn" onclick="location.href='projects.html'">See My Projects</button>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 Nasir Abubakar. All Rights Reserved.
+  <header>
+    <h1>Nasir's World</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="mystory.html">My Story</a>
+      <a href="myvision.html">My Vision</a>
+      <a href="help.html">Help Others</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>  <section class="hero">
+    <h2>Welcome to My World!</h2>
+    <p>
+      I'm Nasir Abubakar, a young engineer with big dreams. I love technology, AI, and building cool things that help the world. This is my space where I share my story, my projects, and my vision to build the fastest AI in the world.
+    </p>
+  </section>  <footer>
+    &copy; 2025 Nasir Abubakar - All Rights Reserved
   </footer>
-
 </body>
-</html>
+      </html>
