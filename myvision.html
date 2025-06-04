@@ -1,90 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Vision - Nasir's World</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      background-color: #0a0f2c;
-      color: #ffffff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-    }
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background: linear-gradient(135deg, #0a0f2c, #1e2959);
+  color: #ffffff;
+  min-height: 100vh;
+}
 
-    header {
-      background-color: #10163a;
-      padding: 20px;
-      text-align: center;
-    }
+header {
+  background-color: #10163a;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideDown 1s ease;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-      color: #00c3ff;
-    }
+header h1 {
+  color: #00c3ff;
+  font-size: 28px;
+}
 
-    nav {
-      margin-top: 10px;
-    }
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
+}
 
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
+nav a:hover, nav a.active {
+  color: #00c3ff;
+  border-bottom: 2px solid #00c3ff;
+  padding-bottom: 3px;
+}
 
-    nav a.active,
-    nav a:hover {
-      color: #00c3ff;
-      border-bottom: 2px solid #00c3ff;
-      padding-bottom: 3px;
-    }
+.vision {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeIn 1.5s ease;
+}
 
-    main {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+.vision h2 {
+  font-size: 36px;
+  color: #00c3ff;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-    section h2 {
-      color: #00c3ff;
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
+.vision p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #c0c7ff;
+  text-align: center;
+}
 
-    section h3 {
-      color: #ffd700;
-      margin-top: 30px;
-      font-size: 22px;
-    }
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0d1230;
+  color: #888;
+  font-size: 14px;
+}
 
-    section p, section ul {
-      line-height: 1.8;
-      font-size: 18px;
-    }
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
 
-    ul {
-      padding-left: 20px;
-    }
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
 
-    li {
-      margin-bottom: 10px;
-    }
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    footer {
-      background-color: #10163a;
-      color: #aaaaaa;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
+  nav {
+    margin-top: 10px;
+  }
+
+  .vision h2 {
+    font-size: 28px;
+  }
+
+  .vision p {
+    font-size: 16px;
+  }
+}
+
   </style>
 </head>
 <body>
-
   <header>
     <h1>Nasir's World</h1>
     <nav>
@@ -93,43 +113,20 @@
       <a href="projects.html">Projects</a>
       <a href="mystory.html">My Story</a>
       <a href="myvision.html" class="active">My Vision</a>
+      <a href="help.html">Help Others</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </header>
-
-  <main>
-    <section>
-      <h2>My Vision</h2>
-      <p>
-        I believe that one small idea can change the world. My dream is to become an engineer who builds the fastest and most helpful AI in the world – not to show power, but to spread knowledge, kindness, and solutions to the people who need it most.
-      </p>
-
-      <h3>Our Team: The Builders of the Future</h3>
-      <ul>
-        <li><strong>Nasir Abubakar</strong> – Dreamer, Leader, and Creator of NasirBot. I guide the vision and work hard every day to learn, build, and inspire others.</li>
-        <li><strong>Michael</strong> – Expert programmer from Canada. He helps with coding, testing, and problem-solving in projects.</li>
-        <li><strong>Aisha</strong> – Creative designer from Kenya. She brings life to our apps and websites with beautiful designs.</li>
-        <li><strong>Amit</strong> – AI engineer from India. He supports our work in machine learning and GPT technology.</li>
-        <li><strong>ChatGPT + Nasir</strong> – A super team of human and AI, building the future together with love, honesty, and focus.</li>
-      </ul>
-
-      <h3>What We Stand For</h3>
-      <ul>
-        <li>🌍 Using technology to help the poor and bring hope.</li>
-        <li>📚 Sharing knowledge freely with the world.</li>
-        <li>🧠 Building AI that is wise, kind, and useful.</li>
-        <li>🤝 Creating opportunities for everyone, no matter where they come from.</li>
-      </ul>
-
-      <p>
-        This is just the beginning. I am Nasir, and I’m ready to help the world grow, one line of code at a time.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Nasir Abubakar. All rights reserved.</p>
+  </header>  <section class="vision">
+    <h2>My Vision</h2>
+    <p>
+      My vision is to become one of the greatest engineers in the world and build the fastest Artificial Intelligence that will help people solve real-life problems.
+      <br><br>
+      I want to create things that improve lives — smart tools, helpful robots, and platforms that inspire others. I believe that knowledge should be shared, and with every skill I learn, I want to teach others and help them grow too.
+      <br><br>
+      I dream of working with amazing people like Elon Musk and the OpenAI team, building a better future for all. I am just starting, but I will never give up.
+    </p>
+  </section>  <footer>
+    &copy; 2025 Nasir Abubakar - All Rights Reserved
   </footer>
-
 </body>
-  </html
+</html>
