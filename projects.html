@@ -1,158 +1,161 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects - Nasir's World</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #0d1b2a;
-      color: #ffffff;
-    }
-
-    nav {
-      background-color: #1b263b;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-    }
-
-    nav .logo {
-      color: #00b4d8;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
+    * {
       margin: 0;
       padding: 0;
-    }
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background: linear-gradient(135deg, #0a0f2c, #1e2959);
+  color: #ffffff;
+  min-height: 100vh;
+}
 
-    nav ul li a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 500;
-    }
+header {
+  background-color: #10163a;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideDown 1s ease;
+}
 
-    nav ul li a:hover {
-      color: #00b4d8;
-    }
+header h1 {
+  color: #00c3ff;
+  font-size: 28px;
+}
 
-    header {
-      text-align: center;
-      padding: 50px 20px 20px;
-    }
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
+}
 
-    header h1 {
-      font-size: 2.8rem;
-      color: #00b4d8;
-    }
+nav a:hover, nav a.active {
+  color: #00c3ff;
+  border-bottom: 2px solid #00c3ff;
+  padding-bottom: 3px;
+}
 
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+.projects {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  animation: fadeIn 1.5s ease;
+}
 
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
+.projects h2 {
+  font-size: 36px;
+  color: #00c3ff;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-    .project-card {
-      background-color: #1b263b;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 180, 216, 0.2);
-      transition: transform 0.3s;
-    }
+.project {
+  background-color: #17224d;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
 
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
+.project:hover {
+  transform: scale(1.02);
+}
 
-    .project-card h3 {
-      color: #00b4d8;
-      margin-top: 0;
-    }
+.project h3 {
+  color: #00c3ff;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
 
-    .project-card p {
-      font-size: 1rem;
-      color: #ccc;
-    }
+.project p {
+  font-size: 16px;
+  color: #c0c7ff;
+  line-height: 1.6;
+}
 
-    footer {
-      background-color: #1b263b;
-      text-align: center;
-      padding: 20px;
-      color: #ccc;
-      font-size: 0.9rem;
-      margin-top: 40px;
-    }
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0d1230;
+  color: #888;
+  font-size: 14px;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .projects h2 {
+    font-size: 28px;
+  }
+
+  .project h3 {
+    font-size: 18px;
+  }
+
+  .project p {
+    font-size: 15px;
+  }
+}
+
   </style>
 </head>
 <body>
-
-  <nav>
-  <div class="logo">Nasir's World</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Me</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="my-story.html">My Story</a></li>
-    <li><a href="help.html">Help Others</a></li>
-    <li><a href="team.html">Team</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  </nav>
-
-  <!-- Header -->
   <header>
-    <h1>My Projects</h1>
-  </header>
+    <h1>Nasir's World</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="mystory.html">My Story</a>
+      <a href="myvision.html">My Vision</a>
+      <a href="help.html">Help Others</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>  <section class="projects">
+    <h2>My Projects</h2><div class="project">
+  <h3>1. My Personal Website</h3>
+  <p>This website is my digital home, where I share my dreams, my story, and everything I build. It's my first big step as a young engineer.</p>
+</div>
 
-  <!-- Main Content -->
-  <main>
-    <p>Here are some of the amazing projects I’m working on to change the world with creativity, technology, and intelligence:</p>
+<div class="project">
+  <h3>2. NasirBot AI</h3>
+  <p>A simple intelligent chatbot inspired by GPT. I plan to turn it into a powerful assistant and Android app to help people learn and grow smarter.</p>
+</div>
 
-    <div class="projects-grid">
+<div class="project">
+  <h3>3. Help Others Platform</h3>
+  <p>A page dedicated to sharing ideas and support for people who need help. My dream is to build tools that solve real-world problems.</p>
+</div>
 
-      <div class="project-card">
-        <h3>🌐 Nasir's World Website</h3>
-        <p>A personal website where I share my story, dreams, and everything I’m building to inspire others like me.</p>
-      </div>
-
-      <div class="project-card">
-        <h3>🤖 NasirBot (AI Assistant)</h3>
-        <p>An intelligent assistant that I’m designing to help people with learning, solving problems, and guiding them with smart ideas.</p>
-      </div>
-
-      <div class="project-card">
-        <h3>📱 NasirBot Mobile App</h3>
-        <p>A mobile app version of NasirBot using MIT App Inventor. It will make my AI accessible on Android phones for daily help.</p>
-      </div>
-
-      <div class="project-card">
-        <h3>💡 Inspire the World Project</h3>
-        <p>A mission to reach out to kids, students, and dreamers to believe in themselves and start learning tech early.</p>
-      </div>
-
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 Nasir Abubakar. All rights reserved.
+  </section>  <footer>
+    &copy; 2025 Nasir Abubakar - All Rights Reserved
   </footer>
-
 </body>
-  </html>
+</html>
