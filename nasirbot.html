@@ -3,120 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chat with NasirBot</title>
+  <title>Talk to NasirBot</title>
   <style>
     body {
-      background-color: #0d1b2a;
-      color: white;
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b172a;
+      color: #ffffff;
     }
-
     header {
-      background-color: #1b263b;
+      background-color: #112244;
       padding: 20px;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
-
     header h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 2em;
+      color: #00ccff;
     }
-
-    .chat-container {
-      max-width: 600px;
+    main {
+      max-width: 900px;
       margin: 30px auto;
-      background-color: #1e293b;
-      border-radius: 10px;
       padding: 20px;
-      box-shadow: 0 0 10px #00000070;
+      background-color: #162b47;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.2);
     }
-
-    .messages {
-      height: 300px;
-      overflow-y: auto;
-      padding: 10px;
-      border: 1px solid #334155;
-      border-radius: 6px;
-      margin-bottom: 10px;
-      background-color: #0f172a;
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
     }
-
-    .message {
-      margin: 10px 0;
-    }
-
-    .user {
-      text-align: right;
-      color: #38bdf8;
-    }
-
-    .bot {
-      text-align: left;
-      color: #22c55e;
-    }
-
-    input[type="text"] {
-      width: 80%;
-      padding: 10px;
+    iframe {
+      width: 100%;
+      height: 500px;
       border: none;
-      border-radius: 5px;
-      font-size: 16px;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,255,255,0.2);
     }
-
-    button {
-      padding: 10px 15px;
-      margin-left: 5px;
-      background-color: #3b82f6;
+    .btn-home {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      font-size: 1em;
       color: white;
+      background-color: #00aaff;
       border: none;
-      border-radius: 5px;
-      cursor: pointer;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
     }
-
-    button:hover {
-      background-color: #2563eb;
+    .btn-home:hover {
+      background-color: #0088cc;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>🤖 Chat with NasirBot</h1>
+    <h1>Talk to NasirBot</h1>
   </header>
+  <main>
+    <p>
+      Meet <strong>NasirBot</strong> – your smart friend that can chat with you, answer questions, and help you learn. This AI was created by <strong>Nasir Abubakar</strong>, a young boy from Nigeria who dreams of building the fastest AI in the world.
+    </p>
+    <p>
+      NasirBot understands English and is always ready to help. Just type your question below and start chatting!
+    </p>
 
-  <div class="chat-container">
-    <div class="messages" id="messages"></div>
-    <input type="text" id="userInput" placeholder="Type your message..." />
-    <button onclick="sendMessage()">Send</button>
-  </div>
+    <!-- Replace this iframe with your real chatbot or MIT App Inventor link -->
+    <iframe src="https://example.com/nasirbot" title="NasirBot Chat"></iframe>
 
-  <script>
-    function sendMessage() {
-      const input = document.getElementById("userInput");
-      const messages = document.getElementById("messages");
-      const userText = input.value.trim();
-
-      if (userText === "") return;
-
-      // Add user message
-      const userMsg = document.createElement("div");
-      userMsg.className = "message user";
-      userMsg.innerText = userText;
-      messages.appendChild(userMsg);
-
-      // Clear input
-      input.value = "";
-
-      // Fake response from NasirBot (for now)
-      const botMsg = document.createElement("div");
-      botMsg.className = "message bot";
-      botMsg.innerText = "🤖 NasirBot: Na gode! Zan duba wannan.";
-      messages.appendChild(botMsg);
-
-      // Scroll to bottom
-      messages.scrollTop = messages.scrollHeight;
-    }
-  </script>
+    <a class="btn-home" href="index.html">← Back to Home</a>
+  </main>
 </body>
 </html>
